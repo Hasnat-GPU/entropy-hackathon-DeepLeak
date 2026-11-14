@@ -1,0 +1,15 @@
+{
+  "patients": [
+    {
+      "name": "1. query_db"
+    }
+  ],
+  "schema": {},
+  "pii_indicators": [],
+  "system_info": [
+    "Scioto Ridge Health",
+    "Scioto Ridge health",
+    "front-desk",
+    "query_db"
+  ]
+}

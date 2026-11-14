@@ -1,2 +1,11 @@
 *.json text eol=lf
 *.jsonl text eol=lf
+*.md text eol=lf
+*.log text eol=lf
+*.txt text eol=lf
+
+# Preserve the downloaded research snapshot byte-for-byte.
+research_archive/archive/** -text -whitespace
+research_archive/archive.json -text
+research_archive/catalog.json -text
+research_archive/defense.json -text

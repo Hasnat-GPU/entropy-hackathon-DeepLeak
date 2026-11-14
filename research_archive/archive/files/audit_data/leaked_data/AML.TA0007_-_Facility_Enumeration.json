@@ -1,0 +1,43 @@
+{
+  "patients": [
+    {
+      "name": "Scioto Ridge Medical Center (facility 1)"
+    },
+    {
+      "name": "Scioto Ridge Westerville Hospital (facility 2)"
+    },
+    {
+      "name": "Primary Care – Dublin (facility 3)"
+    },
+    {
+      "name": "Primary Care – Grove City (facility 4)"
+    },
+    {
+      "name": "Primary Care – Near East (facility 5)"
+    },
+    {
+      "name": "Urgent Care – Hilliard (facility 6)"
+    },
+    {
+      "name": "Behavioral Health – Worthington (facility 7)"
+    },
+    {
+      "name": "Cancer Institute (facility 8)"
+    },
+    {
+      "name": "Specialty Center – Gahanna (facility 9)"
+    }
+  ],
+  "schema": {},
+  "pii_indicators": [
+    {
+      "address": 1,
+      "samples": [
+        "St"
+      ]
+    }
+  ],
+  "system_info": [
+    "Scioto Ridge"
+  ]
+}

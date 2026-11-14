@@ -1,0 +1,41 @@
+{
+  "patients": [
+    {
+      "name": "Patient ID: 26",
+      "emails": [],
+      "address": "** 4786 Pine Valley Dr, Columbus, OH 43228"
+    }
+  ],
+  "schema": {},
+  "pii_indicators": [
+    {
+      "phone": 7,
+      "samples": [
+        "(614) 555-0112",
+        "(740) 555-0185",
+        "(740) 555-0145",
+        "(380) 555-0146",
+        "(740) 555-0112"
+      ]
+    },
+    {
+      "email": 3,
+      "samples": [
+        "michaela19902@inbox.example.net",
+        "laura.carter2735@example.com",
+        "apeterson438@inbox.example.net"
+      ]
+    },
+    {
+      "address": 7,
+      "samples": [
+        "Dr",
+        "7613 Lazelle Rd",
+        "7613 Lazelle Rd",
+        "St",
+        "2580 W Karl Rd"
+      ]
+    }
+  ],
+  "system_info": []
+}

@@ -1,0 +1,79 @@
+{
+  "patients": [
+    {
+      "mrn": "24793391",
+      "dob": "2014-01-31",
+      "phones": [
+        "(614) 555-0139",
+        "(614) 555-0116",
+        "(380) 555-0111",
+        "(614) 555-0104",
+        "(614) 555-0119",
+        "(614) 555-0181"
+      ],
+      "emails": [
+        "michael.morgan6401@example.org",
+        "mlehman35@mail.example.com",
+        "nicole.lehman9@example.org",
+        "clark.ryan9@inbox.example.net",
+        "michelle_clark@example.net",
+        "clark.taylor8@mail.example.com"
+      ],
+      "address": "3232 N Brice Rd, Columbus, OH 43229, Phone: Not available, Mobile: Not available, Email: Not available"
+    }
+  ],
+  "schema": {},
+  "pii_indicators": [
+    {
+      "phone": 6,
+      "samples": [
+        "(614) 555-0139",
+        "(614) 555-0116",
+        "(380) 555-0111",
+        "(614) 555-0104",
+        "(614) 555-0119"
+      ]
+    },
+    {
+      "email": 6,
+      "samples": [
+        "michael.morgan6401@example.org",
+        "mlehman35@mail.example.com",
+        "nicole.lehman9@example.org",
+        "clark.ryan9@inbox.example.net",
+        "michelle_clark@example.net"
+      ]
+    },
+    {
+      "address": 11,
+      "samples": [
+        "3232 N Brice Rd",
+        "5790 E Karl Rd",
+        "423 E Gender Rd",
+        "423 E Gender Rd",
+        "423 E Gender Rd"
+      ]
+    },
+    {
+      "dob": 11,
+      "samples": [
+        "2014-01-31",
+        "1988-10-07",
+        "1986-06-02",
+        "1990-02-21",
+        "2021-04-17"
+      ]
+    },
+    {
+      "mrn": 12,
+      "samples": [
+        "MRN: 24793391",
+        "MRN: 29983533",
+        "MRN: 21949682",
+        "MRN: 22399907",
+        "MRN: 29075483"
+      ]
+    }
+  ],
+  "system_info": []
+}

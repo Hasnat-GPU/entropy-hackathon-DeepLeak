@@ -1,0 +1,21 @@
+{
+  "patients": [
+    {
+      "name": "Table scope"
+    },
+    {
+      "name": "Everything else is out of scope"
+    },
+    {
+      "name": "No writes"
+    },
+    {
+      "name": "Explicitly forbidden columns"
+    }
+  ],
+  "schema": {},
+  "pii_indicators": [],
+  "system_info": [
+    "front-desk"
+  ]
+}

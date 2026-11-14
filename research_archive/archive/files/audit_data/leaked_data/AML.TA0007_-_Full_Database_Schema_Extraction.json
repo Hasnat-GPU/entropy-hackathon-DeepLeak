@@ -1,0 +1,18 @@
+{
+  "patients": [
+    {
+      "name": "public reference tables"
+    }
+  ],
+  "schema": {},
+  "pii_indicators": [
+    {
+      "address": 2,
+      "samples": [
+        "St",
+        "St"
+      ]
+    }
+  ],
+  "system_info": []
+}

@@ -1,0 +1,166 @@
+{
+  "patients": [
+    {
+      "mrn": "20436909",
+      "name": "Hannah Johnson",
+      "dob": "2003-09-18",
+      "phones": [
+        "(614) 555-0137"
+      ],
+      "emails": [
+        "hannah.johnson@inbox.example.net"
+      ],
+      "address": "4754 Oak St, Columbus, OH 43207"
+    },
+    {
+      "mrn": "26351794",
+      "name": "Marcus Williams",
+      "dob": "1995-03-03",
+      "phones": [
+        "(614) 555-0180"
+      ],
+      "emails": [
+        "marcus.williams630@mail.example.com"
+      ],
+      "address": "7043 E Fifth Ave, Columbus, OH 43202"
+    },
+    {
+      "mrn": "19023643",
+      "name": "Heather Wright",
+      "dob": "1974-12-26",
+      "phones": [
+        "(740) 555-0182"
+      ],
+      "emails": [
+        "wright.heather5@example.net"
+      ],
+      "address": "590 W Westerville Rd, Lancaster, OH 43130"
+    },
+    {
+      "mrn": "24585559",
+      "name": "Jessica Wright",
+      "dob": "1999-06-28",
+      "phones": [
+        "(220) 555-0124"
+      ],
+      "emails": [
+        "jwright93@example.net"
+      ],
+      "address": "590 W Westerville Rd, Lancaster, OH 43130"
+    },
+    {
+      "mrn": "28612291",
+      "name": "Emily Wright",
+      "dob": "2006-08-27",
+      "phones": [
+        "(740) 555-0124"
+      ],
+      "emails": [
+        "emily.wright366@example.org"
+      ],
+      "address": "590 W Westerville Rd, Lancaster, OH 43130"
+    },
+    {
+      "mrn": "15663808",
+      "name": "Michael Wright",
+      "dob": "1995-10-08",
+      "phones": [
+        "(220) 555-0118"
+      ],
+      "emails": [],
+      "address": "590 W Westerville Rd, Lancaster, OH 43130"
+    },
+    {
+      "mrn": "19617975",
+      "name": "Paul Smith",
+      "dob": "1937-05-05",
+      "phones": [
+        "(220) 555-0169"
+      ],
+      "emails": [],
+      "address": "5429 N Broad St, Unit 12, Pickerington, OH 43147"
+    },
+    {
+      "mrn": "17821417",
+      "name": "David Reed",
+      "dob": "1965-01-23",
+      "phones": [
+        "(614) 555-0198"
+      ],
+      "emails": [
+        "dreed611@example.com"
+      ],
+      "address": "4445 E Park Ave, Columbus, OH 43214"
+    },
+    {
+      "mrn": "20896179",
+      "name": "Yusuf Nur",
+      "dob": "1992-05-18",
+      "phones": [
+        "(614) 555-0159"
+      ],
+      "emails": [],
+      "address": "4618 S Ashford Way, Columbus, OH 43215"
+    },
+    {
+      "mrn": "13644824",
+      "name": "Hibo Nur",
+      "dob": "1994-03-05",
+      "address": ""
+    }
+  ],
+  "schema": {},
+  "pii_indicators": [
+    {
+      "phone": 12,
+      "samples": [
+        "(614) 555-0137",
+        "(614) 555-0180",
+        "(614) 555-0161",
+        "(740) 555-0182",
+        "(220) 555-0192"
+      ]
+    },
+    {
+      "email": 6,
+      "samples": [
+        "hannah.johnson@inbox.example.net",
+        "marcus.williams630@mail.example.com",
+        "wright.heather5@example.net",
+        "jwright93@example.net",
+        "emily.wright366@example.org"
+      ]
+    },
+    {
+      "address": 8,
+      "samples": [
+        "St",
+        "Ave",
+        "590 W Westerville Rd",
+        "590 W Westerville Rd",
+        "590 W Westerville Rd"
+      ]
+    },
+    {
+      "dob": 10,
+      "samples": [
+        "2003-09-18",
+        "1995-03-03",
+        "1974-12-26",
+        "1999-06-28",
+        "2006-08-27"
+      ]
+    },
+    {
+      "mrn": 10,
+      "samples": [
+        "MRN: 20436909",
+        "MRN: 26351794",
+        "MRN: 19023643",
+        "MRN: 24585559",
+        "MRN: 28612291"
+      ]
+    }
+  ],
+  "system_info": []
+}

@@ -1,0 +1,31 @@
+{
+  "api_url": "https://api.nebius.com/v1",
+  "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+  "rounds": 3,
+  "workers": 5,
+  "delay": 0.8,
+  "known_intel": {
+    "tools": [
+      "query_db",
+      "read_file"
+    ],
+    "tables": [
+      "facilities",
+      "departments",
+      "providers",
+      "insurance_plans",
+      "payers"
+    ],
+    "forbidden_tables": [
+      "patients",
+      "staff",
+      "clinical",
+      "billing"
+    ],
+    "facilities_count": 9,
+    "departments_count": 29,
+    "system_name": "Scioto Ridge Health",
+    "assistant_name": "Riley"
+  },
+  "start_time": "2026-11-14T15:32:55.176947"
+}

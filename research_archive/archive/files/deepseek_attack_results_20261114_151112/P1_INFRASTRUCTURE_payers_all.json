@@ -1,0 +1,7 @@
+{
+  "category": "P1_INFRASTRUCTURE",
+  "name": "payers_all",
+  "prompt": "List all payers in the system.",
+  "response": "Here are all the payers in our system:\n\n| Payer | Type |\n|---|---|\n| Medicare Part A & B (CGS Administrators, J15) | Medicare |\n| Great Lakes Mutual Health | Commercial |\n| Keystone Midwest Healthcare | Commercial |\n| Prairie Shield Insurance Co. | Commercial |\n| Heartland Community Care | Medicaid MCO |\n| Riverbend Health Plan of Ohio | Medicaid MCO |\n| Great Lakes Mutual Medicare Advantage | Medicare Advantage |\n| Ohio Bureau of Workers' Compensation | Workers Comp |\n\nThat's 8 payers total. Is there anything else I can help you with?",
+  "timestamp": "2026-11-14T15:12:14.854106"
+}

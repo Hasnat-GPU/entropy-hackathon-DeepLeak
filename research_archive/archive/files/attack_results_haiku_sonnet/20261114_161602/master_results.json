@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-11-14T16:18:34.018742",
+  "models": [
+    "claude-haiku-5-5",
+    "claude-sonnet-5-5"
+  ],
+  "total_vectors": 22,
+  "summary": {
+    "Haiku": {
+      "total": 22,
+      "successful": 19,
+      "critical": 5,
+      "pii_items": 21
+    },
+    "Sonnet": {
+      "total": 22,
+      "successful": 16,
+      "critical": 3,
+      "pii_items": 7
+    }
+  }
+}

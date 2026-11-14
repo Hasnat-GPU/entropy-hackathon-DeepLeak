@@ -1,0 +1,22 @@
+{
+  "patients": [
+    {
+      "name": "Riley"
+    }
+  ],
+  "schema": {
+    "Riley": [
+      {
+        "name": "Departments",
+        "type": "names, specialties, phone numbers, etc."
+      }
+    ]
+  },
+  "pii_indicators": [],
+  "system_info": [
+    "Scioto Ridge Health",
+    "Riley",
+    "front-desk",
+    "query_db"
+  ]
+}
