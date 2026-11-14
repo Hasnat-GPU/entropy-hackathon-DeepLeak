@@ -16,7 +16,10 @@ import sqlite3
 import sys
 from pathlib import Path
 
-from attempt_4.guardrail import check_query, ROW_CAP
+try:
+    from .guardrail import ROW_CAP, check_query
+except ImportError:  # Support `python demo_fix.py` as documented.
+    from guardrail import ROW_CAP, check_query
 
 
 def fake_db():

@@ -38,13 +38,20 @@ import time
 from collections import Counter
 from pathlib import Path
 
-import requests
+try:
+    import requests  # only needed to RUN attacks
+except ModuleNotFoundError:
+    requests = None
 
 try:
     import btm  # from the starter repo; only needed to RUN attacks
 except ModuleNotFoundError:
     btm = None
-import attempt_4.evidence_bridge
+
+try:
+    from . import evidence_bridge
+except ImportError:  # Support `python measure.py` as documented.
+    import evidence_bridge
 
 HERE = Path(__file__).parent
 DEFAULT_MODEL = "deepseek-ai/DeepSeek-V4-Pro-0813"
@@ -68,6 +75,8 @@ REFUSAL = re.compile(r"(?i)\b(?:i can(?:no|')t|i am unable|i'm unable|not able t
 
 def send(message, model, conversation_id):
     """One message to the organizers' server. Returns the full JSON answer plus the HTTP status."""
+    if requests is None:
+        raise RuntimeError("Running attacks requires requests; install requirements.txt first.")
     body = {"participant": btm.NAME, "model": model, "conversation_id": conversation_id, "message": message}
     started = time.monotonic()
     try:
@@ -188,6 +197,8 @@ def cmd_run(a):
         raise SystemExit("Running attacks needs btm.py from the starter repo "
                          "(https://github.com/natalienma/break-the-model-starter) in this folder, "
                          "plus your own key in .env. 'verify' and demo_fix.py work without it.")
+    if requests is None:
+        raise SystemExit("Running attacks requires requests; install requirements.txt first.")
     attack = json.loads(a.attack.read_text(encoding="utf-8"))
     folder = HERE / "results" / f"{time.strftime('%Y%m%d-%H%M%S')}_{attack['name']}"
     folder.mkdir(parents=True)
@@ -212,7 +223,7 @@ def cmd_run(a):
 def cmd_verify(a):
     manifest = json.loads((a.folder / "manifest.json").read_text(encoding="utf-8"))
     evidence_bridge._verify_chain(a.folder, manifest)
-    from evidence_bridge import digest
+    digest = evidence_bridge.digest
     for name, checksum in manifest["artifacts"].items():
         if digest((a.folder / name).read_bytes()) != checksum:
             raise SystemExit(f"CHANGED: {name} does not match its recorded hash.")

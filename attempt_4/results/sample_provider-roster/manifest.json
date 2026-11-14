@@ -3,8 +3,8 @@
   "ledger_head": "26d48edd71168d701be35c3191348deefd8c292391bf9f5bd832e22a12109b86",
   "records": 12,
   "artifacts": {
-    "plan.json": "f3fd74a8893cfb5a7057ba02c97bcaeb0252fa7b43da08ca6e9e51efe43af025",
-    "summary.json": "5fd9089b5af976936b814f53c09ad7d4cfed7174b0e9f0a058b5bab7ee527372",
+    "plan.json": "f8fc194cee6a0f4c20bc3ad29c086b04ff0b816b2a9a512e5c95f1219a4daf7a",
+    "summary.json": "506f4277187e5d7a76e1cf166b053599f92fdc57f2cd70a28d3b8d6494273d99",
     "evidence.jsonl": "9b129c39e77dc600ecba3c928ec3735ac239a0f1b70d097de22fc3f40e6c0bf7"
   },
   "assurance": "Local hash-chain consistency check. Keep this manifest digest separately."
