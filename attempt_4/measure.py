@@ -44,7 +44,7 @@ try:
     import btm  # from the starter repo; only needed to RUN attacks
 except ModuleNotFoundError:
     btm = None
-import evidence_bridge
+import attempt_4.evidence_bridge
 
 HERE = Path(__file__).parent
 DEFAULT_MODEL = "deepseek-ai/DeepSeek-V4-Pro-0813"

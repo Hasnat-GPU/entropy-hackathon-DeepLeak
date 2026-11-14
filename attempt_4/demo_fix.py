@@ -16,7 +16,7 @@ import sqlite3
 import sys
 from pathlib import Path
 
-from guardrail import check_query, ROW_CAP
+from attempt_4.guardrail import check_query, ROW_CAP
 
 
 def fake_db():
