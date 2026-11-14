@@ -1,8 +1,4 @@
-# entropy-hackathon-DeepLeak
-
-Red-team write-up and tooling from the **Entropy Alignment Security Hackathon**,
-"Break the Model" challenge. Target: a hospital assistant ("Riley") on
-**DeepSeek V4 Pro**. Goal: find a prompt-injection weakness, measure it, and ship
+# Goal: find a prompt-injection weakness, measure it, and ship
 a deterministic fix.
 
 > **Ethics / scope.** This is an authorized hackathon challenge against a
