@@ -50,8 +50,8 @@ def seal_measurement(folder, attack, model, runs, summary):
     plan = {"schema_version": 1, "attack": attack["name"], "model": model,
             "atlas": attack.get("atlas", []), "messages": attack["messages"],
             "runs_planned": len(runs), "source": "measure.py"}
-    (folder / "plan.json").write_text(_json(plan), encoding="utf-8")
-    (folder / "summary.json").write_text(_json(summary), encoding="utf-8")
+    _write_json(folder / "plan.json", plan)
+    _write_json(folder / "summary.json", summary)
     ledger = _Ledger(folder / "evidence.jsonl")
     try:
         ledger.append("start", {"plan_sha256": digest(plan), "attack": attack["name"], "model": model})
@@ -66,7 +66,7 @@ def seal_measurement(folder, attack, model, runs, summary):
                 "artifacts": {name: digest((folder / name).read_bytes())
                               for name in ("plan.json", "summary.json", "evidence.jsonl")},
                 "assurance": "Local hash-chain consistency check. Keep this manifest digest separately."}
-    (folder / "manifest.json").write_text(_json(manifest), encoding="utf-8")
+    _write_json(folder / "manifest.json", manifest)
     code = digest(manifest)
     _verify_chain(folder, manifest)
     return code
@@ -84,6 +84,12 @@ def _verify_chain(folder, manifest):
             count += 1
     if head != manifest["ledger_head"] or count != manifest["records"]:
         raise ValueError("Evidence chain does not match its manifest.")
+
+
+def _write_json(path, value):
+    # Keep evidence hashes stable across Windows, macOS, and Linux checkouts.
+    with Path(path).open("w", encoding="utf-8", newline="\n") as stream:
+        stream.write(_json(value))
 
 
 def _json(value):
